@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=ZeroTier
+Comment=ZeroTier tray UI (Linux)
+Exec=zerotier-gui
+Icon=org.zerotier.ZeroTierGUI
+Terminal=false
+Categories=Network;System;
+StartupNotify=false

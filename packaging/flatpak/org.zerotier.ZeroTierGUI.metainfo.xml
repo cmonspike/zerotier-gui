@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.zerotier.ZeroTierGUI</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <name>ZeroTier</name>
+  <summary>Tray-only ZeroTier GUI for Linux</summary>
+  <description>
+    <p>
+      ZeroTier GUI is a lightweight tray application for managing ZeroTier networks on Linux.
+      It shows joined networks, status and assigned addresses, and provides quick connect/disconnect
+      and permission toggles from the system tray.
+    </p>
+  </description>
+  <launchable type="desktop-id">org.zerotier.ZeroTierGUI.desktop</launchable>
+  <provides>
+    <binary>zerotier-gui</binary>
+  </provides>
+  <categories>
+    <category>Network</category>
+    <category>System</category>
+  </categories>
+  <url type="homepage">https://github.com/zerotier/ZeroTier-GUI</url>
+  <url type="bugtracker">https://github.com/zerotier/ZeroTier-GUI/issues</url>
+  <releases>
+    <release version="0.1.6" date="2026-03-26"/>
+  </releases>
+</component>
