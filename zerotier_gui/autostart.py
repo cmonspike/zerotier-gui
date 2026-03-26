@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 
@@ -19,15 +20,24 @@ def set_autostart_enabled(enabled: bool) -> None:
             pass
         return
 
-    # Standard GNOME/Unity autostart entry.
+    # Standard desktop autostart entry.
+    flatpak_id = os.environ.get("FLATPAK_ID", "").strip()
+    if flatpak_id:
+        exec_cmd = f"flatpak run {flatpak_id}"
+        icon_name = flatpak_id
+    else:
+        exec_cmd = "zerotier-gui"
+        icon_name = "zerotier-gui"
+
     content = "\n".join(
         [
             "[Desktop Entry]",
             "Type=Application",
-            "Name=ZeroTier",
+            "Name=ZeroTier-Gui",
             "Comment=ZeroTier tray UI",
-            "Exec=zerotier-gui",
-            "Icon=zerotier-gui",
+            f"Exec={exec_cmd}",
+            f"Icon={icon_name}",
+            "Terminal=false",
             "X-GNOME-Autostart-enabled=true",
         ]
     )

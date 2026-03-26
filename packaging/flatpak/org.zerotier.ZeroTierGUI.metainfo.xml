@@ -3,7 +3,7 @@
   <id>org.zerotier.ZeroTierGUI</id>
   <metadata_license>MIT</metadata_license>
   <project_license>MIT</project_license>
-  <name>ZeroTier</name>
+  <name>ZeroTier-Gui</name>
   <summary>Tray-only ZeroTier GUI for Linux</summary>
   <description>
     <p>

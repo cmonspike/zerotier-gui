@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=ZeroTier
+Name=ZeroTier-Gui
 Comment=ZeroTier tray UI (Linux)
 Exec=zerotier-gui
 Icon=org.zerotier.ZeroTierGUI
