@@ -142,6 +142,9 @@ chmod +x flatpak/build-flatpak.sh
 ./flatpak/build-flatpak.sh
 ```
 
+The build helper automatically runs `flatpak/prepare-wheels.sh` to download
+required Python wheels locally before building (wheels are not committed).
+
 Install generated bundle:
 
 ```bash
