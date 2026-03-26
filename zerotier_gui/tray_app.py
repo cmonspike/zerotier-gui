@@ -457,7 +457,7 @@ class TrayApp:
 
         # About (place just before Quit)
         a_about = QAction("About ZeroTier GUI", menu)
-        a_about.triggered.connect(lambda _checked=False: AboutDialog("https://github.com/zerotier/ZeroTier-GUI").exec())
+        a_about.triggered.connect(lambda _checked=False: AboutDialog("https://github.com/cmonspike/zerotier-gui").exec())
         menu.addAction(a_about)
 
         # Quit
